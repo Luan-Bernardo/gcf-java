@@ -1,3 +1,10 @@
+Integrantes:
+
+- Artur Rosa Correia - RA - 824135943
+- Gustavo Silveira Benicio - RA - 824134160
+- Luan Bernardo Alves - RA 824134204
+- Victor Hugo Santos Nunes - RA - 825163477
+
 🏆 Sistema de Gerenciamento de Times de Futebol
 
 Este projeto foi desenvolvido como parte da A3 da disciplina de Gestão e Qualidade de Software, com o objetivo de aplicar conceitos práticos de engenharia de software em um sistema funcional.
