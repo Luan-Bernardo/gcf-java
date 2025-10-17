@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Campeonatos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-trophy"></i>
+                Gerenciador de Campeonatos
+            </a>
+            <nav>
+                <a href="times.html" class="btn">
+                    <i class="fas fa-users"></i>
+                    Gerenciar Times
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
+            <h1>Campeonatos</h1>
+            <button id="btnNovoCampeonato" class="btn">
+                <i class="fas fa-plus"></i>
+                Novo Campeonato
+            </button>
+        </div>
+        
+        <div id="listaCampeonatos">
+            <!-- Aqui serão exibidos os campeonatos dinâmicamente -->
+        </div>
+    </main>
+
+    <!-- Modal de Novo Campeonato -->
+    <div id="modalCampeonato" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalCampeonatoTitulo">Criar Novo Campeonato</h2>
+                <span class="close">&times;</span>
+            </div>
+            <form id="formCampeonato">
+                <input type="hidden" id="campeonatoId">
+                <div class="form-group">
+                    <label for="nomeCampeonato">Nome do Campeonato</label>
+                    <input type="text" id="nomeCampeonato" placeholder="Ex: Brasileirão Série A" required>
+                </div>
+                <div class="form-group">
+                    <label for="anoCampeonato">Ano/Temporada</label>
+                    <input type="number" id="anoCampeonato" min="2020" max="2030" value="2025" required>
+                </div>
+                <div class="form-group">
+                    <label for="dataInicio">Data de início</label>
+                    <input type="date" id="dataInicio" required>
+                </div>
+                <button type="submit" class="btn" id="btnSalvarCampeonato">Criar Campeonato</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/campeonatos.js"></script>
+</body>
+</html>

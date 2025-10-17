@@ -1,0 +1,20 @@
+# Nome da aplicação
+spring.application.name=gcf-java
+
+# Configuração do servidor
+server.port=8080
+
+# Configuração do banco de dados MySQL Railway (ACESSO PÚBLICO)
+spring.datasource.url=jdbc:mysql://[HOST]:[PORT]/[DATABASE]?useSSL=true&allowPublicKeyRetrieval=true&serverTimezone=UTC
+spring.datasource.username=[USERNAME]
+spring.datasource.password=[PASSWORD]
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# Configurações do Hibernate/JPA
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+spring.jpa.properties.hibernate.format_sql=true
+
+# Configurações de pool de conexões (para múltiplos acessos simultâneos)
+spring.datasource.hikari.maximum-pool-size=10
